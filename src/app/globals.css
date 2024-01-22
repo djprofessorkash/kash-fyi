@@ -1,6 +1,10 @@
+/* Tailwind CSS Setup Frameworks. */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* General Page Styling. */
 
 :root {
   --foreground-rgb: 0, 0, 0;
