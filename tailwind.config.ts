@@ -12,6 +12,36 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title: ['DINPro', 'sans-serif'],
+        main: ['Roboto', 'sans-serif'],
+      },
+      keyframes: {
+        slideInFromLeft: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-200px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)'
+          },
+        },
+        slideInFromBot: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(100px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      },
+      animation: {
+        slideInFromLeft: 'slideInFromLeft .5s ease-out 1',
+        slideInFromBot: 'slideInFromBot .5s ease-out 1',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
