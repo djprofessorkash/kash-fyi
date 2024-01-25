@@ -2,11 +2,25 @@
 
 import Typewriter from "typewriter-effect";
 
-const Footer = () => {
+interface FooterContent {
+	leftJustifiedOutro?: string
+}
+
+const Footer = ({ 
+    leftJustifiedOutro = "Created with ❤️ by AAKASH \"KASH\" SUDHAKAR."
+}: FooterContent): JSX.Element => {
     return (
         <>
             <div>
-                <h2>Created with ❤️ by AAKASH &quot;KASH&quot; SUDHAKAR.</h2>
+            <Typewriter 
+                onInit = {(typewriter) => {
+                    typewriter.typeString(`${leftJustifiedOutro}`).start()
+                }} 
+                options = {{
+                    delay: 12,
+                    cursor: ""
+                }}
+            />
             </div>
         </>
     )
