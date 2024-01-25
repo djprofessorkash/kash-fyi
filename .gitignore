@@ -38,6 +38,10 @@ next-env.d.ts
 .env*.local
 */.env*.local
 
+# Unused Static Assets.
+assets/
+*/assets/
+
 # Production Configurations: Build Data.
 /build
 */build
