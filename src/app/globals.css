@@ -30,8 +30,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  body {
+    @apply bg-[#101010] text-white;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
